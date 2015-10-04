@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
 
@@ -14,7 +15,6 @@
   </head>
 
   <body>
-
     <!-- Navigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -29,19 +29,147 @@
 
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="nav navbar-nav">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">My Projects</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#about"><i class="fa fa-male"></i> About Me</a></li>
+            <li><a href="#info"><i class="fa fa-external-link"></i>External Links</a></li>
+            <li><a href="#project"><i class="fa fa-file"></i> My Projects</a></li>
+            <li><a href="#contact"><i class="fa fa-share"></i> Contact Me</a></li>
           </ul>
         </div>
 
       </div>
     </nav>
 
+    <!-- Title -->
     <div class="container-fluid" id="title">
       <h1><strong>CHRIS</strong> OH</h1>
       <h3><strong>Hi there, thank you for visiting my website!</strong></h3>
     </div> <!-- End Container -->
+
+    <!-- About Me -->
+    <div class="container" id="about">
+      <div class="row text-center">
+        <h1>About Me</h1>
+        <hr class="small">
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-1">
+          <img src=images/me.jpg class="img-responsive img-rounded" alt="me" height="100px">
+        </div>
+        <div class="col-sm-6 col-sm-offset-1">
+          <h3 style="text-align: center;">What's up</h3>
+          <p>My name is Chris Oh, and I am an aspiring full stack developer.
+          I was introduced to Web Development the summer of 2015 when I was at
+          <a href="http://www.lampcamp.guru">LAMP camp.</a> As the name suggests,
+          I primarily worked with the LAMP stack, creating applications in the context of
+          e-commerce. Most of the things I've learned so far were back-end related, and I am
+          now starting to learn some front-end stuff too.</p>
+          <p>In terms of back-end, the technologies I'm most familiar with is the
+          LAMP stack (PHP for the P). I am always willing to learn new things though,
+          and I'm particularly intrested in learning about the full stack JavaScript and Python.
+          For front-end, I know how to work with the standard HTML, CSS, Jquery, along with BootStrap which
+          is what I am using to create this site right now. Additionally, I am
+          accustomed to working as a team in an agile environment (scrum), using tools
+          like JIRA for ticket management and Git for version control.</p>
+          <p>If you want to learn more about me, I'll post my resume and links to my
+          github and linkedin profile below, please check it out!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume/Github/LinkedIn -->
+    <div class="container-fluid" id="info">
+      <div class="row info-title">
+        <h2>What is a website without some buttons?</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 col-sm-offset-3">
+          <center>
+          <a href="https://github.com/Kuhreez" target="_blank" type="button" class="btn btn-primary btn-lg">
+            <i class="fa fa-github-square"></i> My GitHub
+          </a>
+          </center>
+        </div>
+        <div class="col-sm-2">
+          <center>
+          <a href="https://www.linkedin.com/pub/chris-oh/88/12/134" target="_blank" type="button" class="btn btn-primary btn-lg">
+            <i class="fa fa-linkedin-square"></i> My LinkedIn
+          </a>
+          </center>
+        </div>
+        <div class="col-sm-2">
+          <center>
+          <a href="Chris Oh Resume 2015 v2.0.pdf" target="_blank" type="button" class="btn btn-primary btn-lg">
+            <i class="fa fa-file-pdf-o"></i> My Resume
+          </a>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Projects -->
+    <div class="container-fluid" id="project">
+      <div class="row info-title">
+        <h2>Check out some of these projects I'm working on!</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2">
+          <img src="images/tt.png" class="img-responsive" alt="tt" />
+        </div>
+        <div class="col-sm-3">
+          <a href="http://transparenttradecoffee.org/"><h3>Transparent Trade Coffee</h3></a>
+          <hr>
+          <p>I am currently mantaining and keeping up to date
+          <a href="http://transparenttradecoffee.org/">transparenttradecoffee.org.</a>
+          Transparent Trade Coffee is run by Social Enterprise at Emory Goizueta Business School.
+          TTC's mission is to make sure that the coffee growers are being adequately being compensated
+          for the work they do. My job is to update the site with new contents, and to push out new features.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <p>Unfortunately, this is the only project I have for now. I am working on
+          some other cool side projects right now though, so I will add them on as I go!</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid" id="contact">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h3>Contact Me</h3>
+            <p>278 Crystal Downs Way <br> Suwanee, GA 30024</p>
+            <p><i class="fa fa-envelope"></i> seokkyu125@gmail.com
+            <br><i class="fa fa-mobile"></i> 404-513-1968</p>
+            <p class="text-muted">Website made with <i class="fa fa-heart"></i> by Chris Oh.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 
   </body>
 </html>

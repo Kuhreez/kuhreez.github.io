@@ -1,5 +1,4 @@
 body {
-  background-color: rgba(155, 215, 213, .2);
   font-family: 'Karla', sans-serif;
 }
 
@@ -29,4 +28,61 @@ nav li {
 
 nav li:hover {
   background-color: #eee;
+}
+
+/* About Me */
+#about {
+  padding-top: 60px;
+}
+
+#about .img-rounded {
+  padding-top: 70px;
+}
+
+hr.small {
+  max-width: 200px;
+  border-top: 1px solid #000;
+}
+
+/* Info */
+.info-title {
+  text-align: center;
+  color: #eee;
+  margin-bottom: 20px;
+}
+.info-title hr {
+  max-width: 800px;
+}
+
+#info {
+  background-color: #9BD7D5;
+  margin-top: 80px;
+  padding: 50px 0;
+}
+
+#info a {
+  text-align: center;
+}
+
+/* My Projects */
+#project {
+  background: #FF7260;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+#project a {
+  color: #eee;
+}
+
+/* Contact */
+#contact {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background: #FFF5C3;
+}
+
+#contact hr {
+  border-top: 1px solid #000;
+  max-width: 100px;
 }
